@@ -8,25 +8,23 @@
 ::DATETIMEFORMAT - date/time formatting strings
 ::
 
-REM template file name, change this to your target template file
+:: template file name, change this to your target template file
 
 set templatefile=template.txt
 
-
-
-REM set editor
+::unnecssary indicator of what this does
 set editor=notepad
 
+:: sets up template to be printed into the file I know I could skip this step, but I wanted readable code
 
-REM sets up template to be printed into the file I know I could skip this step, but I wanted readable code
-
+::todo: add idiot proofing/check for template file
 ::if not exist %templatefile%
 ::echo on
 ::echo template file does not exist...
 
 
-REM sets up date information
-REM example taken from: http://stackoverflow.com/questions/10945572/windows-batch-formatted-date-into-variable
+:: sets up date information
+:: example taken from: http://stackoverflow.com/questions/10945572/windows-batch-formatted-date-into-variable
 
 :: Turn this on or copy this for loop to see what the date formatting is like
 @echo off
@@ -40,10 +38,10 @@ for /f %%x in ('wmic path win32_localtime get /format:list ^| findstr "="') do s
 ::
 ::
 SET today=%YEAR%%MONTH%%DAY%
-set time=%hour%%minute%
+::set currentime=%hour%%minute%
 
 
-REM sets the current logfile to one represented by today
+:: sets the current logfile to one represented by today
 
 set filename=%today%.txt
 ::echo Template:
