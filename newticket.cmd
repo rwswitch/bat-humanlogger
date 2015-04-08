@@ -11,5 +11,5 @@ TYPE %templatefile% >> %current_ticket_information%
 %editor% %current_ticket_information%
 
 ::output to destination
-TYPE %current_ticket_information% >> %daylog%
+ECHO %current_ticket_information% >> %daylog%
 
