@@ -12,4 +12,4 @@ SET currenttime=%hour%%minute%%second%
 
 ::set current ticket and destination file information
 SET current_ticket_information=logs\%today%-%USERNAME%-%currenttime%.txt
-SET destination=logs\%today%.txt
+SET daylog=logs\%today%.txt
