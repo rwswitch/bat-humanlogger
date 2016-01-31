@@ -7,5 +7,5 @@ Sometimes call volume wouldn't allow for ticket entry in a timely manner, so I c
 
 In this case, I had limited resources available. No access to other scripting languages or better editors. The poor little i3 I was working on could barely handle Outlook, a browser, and VoIP software. So I shaved out the browser component by keeping text file reference docs and this note-taking script.
 
-All it does is copy a template to a new, timestamped file, then opens your editor with that file.
+All it does is copy a template to a new, timestamped file, then opens that file with your editor.
 
